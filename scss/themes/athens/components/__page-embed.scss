@@ -1,0 +1,31 @@
+/* Page Embed */
+
+.rm-embed--page {
+  background-color: var(--block-embed__background-color);
+  // border-radius: 6px;
+  .rm-page__title {
+    font-weight: 600;
+    letter-spacing: -0.03em;
+    color: rgb(var(--body-text-));
+  }
+  > .rm-embed-margin-action {
+    background-color: rgba(var(--athena-blue-80), .5);
+    border: 0 solid rgba(var(--athena-blue-80), .5);
+    opacity: 1;
+  }
+}
+/* Linked References Page Embed */
+.rm-embed-container {
+  background-color: var(--block-embed__background-color) !important;
+  border:1px double var(--athena-blue-50);
+  border-radius: 5px;
+  .rm-embed-container{
+    background-color: var(--sidebar);
+    border: 1px solid rgba(var(--athena-blue-80), .5);
+    border-radius: 5px;
+  }
+}
+// fix for the added border
+.rm-embed--page {
+  margin-left: calc(10px - 13px);
+}

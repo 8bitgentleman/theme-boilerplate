@@ -1,0 +1,137 @@
+// all changes related to athe athena search
+
+// topbar search changes
+.rm-find-or-create-wrapper{
+    //not sure why this is...
+    // width: 20px !important;
+    #find-or-create-input {
+        cursor: pointer;
+        // opacity: 0;
+        /* bring in front of icon to keep clickable */
+        z-index: 10000;
+        // width: 14rem;
+        font-weight: 500;
+        font-size: inherit;
+        background-color: transparent;
+        border-radius: 0.25rem;
+        display: inline-flex;
+        transition: all 0.075s ease;
+        background: var(--bg-color);
+        outline: none !important;
+        border: none !important;
+        box-shadow: none ;
+
+        /* if input is empty (no menu) then use all-around border-radius*/
+        &[value=""] {
+            border-radius: 10px;
+        }
+        &:hover{
+            background-color: rgba(var(--body-text), .1);
+        }
+        &:active{
+            background-color: rgba(var(--body-text), .25);
+        }
+        // &:focus {
+            opacity: 1;
+            // position: fixed;
+            width: 600px;
+            top: 50px;
+            left: calc(50% - 325px);
+            cursor: text;
+            // flex-direction: column;
+            // padding: 2.8rem 4rem 2.8rem 1.5rem;
+            padding: 0 4rem 0 1.5rem;
+
+            z-index: 1050;
+            box-shadow: 0px 24px 60px rgba(0, 0, 0, 0.15),
+                0px 5px 12px rgba(0, 0, 0, 0.1),
+                0 0 0 1px hsla(38.18181818181819, 8.943089430894311%, 24.11764705882353%, 0.1) !important;
+            overflow: hidden;
+            display: flex;
+            background: white !important;
+            font-weight: 300;
+            font-size: 2rem;
+            // caret-color: green;
+            letter-spacing: -0.03em;
+            border-radius: 0.25rem 0.25rem 0 0;
+            // color: red;
+        // }
+
+    }
+    // search icon
+    .bp3-icon-search {
+        margin-top: 5px;
+        &::before {
+            filter: grayscale(1) brightness(4);
+            content: url("data:image/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMSIgZGF0YS1uYW1lPSJMYXllciAxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDIwIDIwIj48cGF0aCBkPSJNNS41OSw5LjkxQTMuNjIsMy42MiwwLDAsMCw4LjI1LDExLDMuNzIsMy43MiwwLDAsMCwxMiw3LjI1LDMuNzIsMy43MiwwLDAsMCw4LjI1LDMuNSwzLjcyLDMuNzIsMCwwLDAsNC41LDcuMjUsMy42MiwzLjYyLDAsMCwwLDUuNTksOS45MVpNMTMuMjUsMTFsNC4xNCw0LjE0LTEuMjUsMS4yNUwxMiwxMi4yNXYtLjY2bC0uMjMtLjI0YTUuMiw1LjIsMCwwLDEtMy41MiwxLjI5LDUuMzUsNS4zNSwwLDAsMS0zLjg3LTEuNTZBNS4yMSw1LjIxLDAsMCwxLDIuODIsNy4yNSw1LjIxLDUuMjEsMCwwLDEsNC4zOCwzLjQyYTUuMjcsNS4yNywwLDAsMSwzLjg3LTEuNiw1LjEzLDUuMTMsMCwwLDEsMy44MywxLjYsNS4yMSw1LjIxLDAsMCwxLDEuNTYsMy44Myw1LjQ0LDUuNDQsMCwwLDEtLjM5LDEuODcsNiw2LDAsMCwxLS45LDEuNjVsLjI0LjIzWiIgc3R5bGU9ImZpbGw6IzMyMmYzOCIvPjwvc3ZnPg==") !important;
+        }
+    }
+    //search results
+    // need to change if screen is small
+    //may also need to change when stuff is in focus
+    .bp3-overlay{
+        position: fixed;
+        top: 58px;
+        left: calc(50% - 460px);
+        width: 600px;
+        
+        // overflow: hidden;
+        z-index: 999999;
+        .rm-find-or-create__menu{
+            border-radius: 0 0 0.25rem 0.25rem !important;
+            .rm-menu-item {
+                padding: 0.75rem 2rem;
+                // border-top: 1px solid green;
+                display: flex;
+                transition: all .05s ease;
+
+                /* selected search result */
+                &[style*="background"] {
+                    background-color: #0075E1 !important;
+                    color: white;
+                    .rm-search-list-item{
+                        color: white;
+                    }
+                    .rm-new-page{
+                        color: var(--athena-gold);
+                    }
+                    .rm-search-list-item-title{
+                        color: var(--athena-blue-25);
+                    }
+                }
+                /* text search results highlighted words */
+                .rm-search-list-item {
+                       color: rgba(var(--body-text), 1) ;
+                       opacity: 0.6;
+                    span[style*="yellow"]{
+                    background-color: rgba(var(--athena-blue), 0.7) !important;
+                    color: var(--background-color);
+                    }
+                }
+            }
+        }
+    }
+}
+// don't know what this does..
+.rm-pages-title-col span[style*="yellow"] {
+    background-color: rgba(var(--color-primary), 0.4) !important;
+    color: var(--text-color);
+}
+/* suggestion and popover box shadow */
+.bp3-popover,
+.bp3-elevation-3 {
+    -webkit-box-shadow: 0 0 0 1px rgba(var(--box-shadow-color), 0.1), 0 2px 4px rgba(var(--box-shadow-color), 0.2), 0 8px 24px rgba(var(--box-shadow-color), 0.2);
+    box-shadow: 0 0 0 1px rgba(var(--box-shadow-color), 0.1), 0 2px 4px rgba(var(--box-shadow-color), 0.2), 0 8px 24px rgba(var(--box-shadow-color), 0.2);
+}
+
+
+/* SOME BLACKMAGIC TO GET SEARCH ICON TO FUNCTION LIKE OTHER BUTTONS */
+
+// .roam-topbar .bp3-icon-search {
+//     padding: 4px;
+//     border-radius: 3px;
+//     margin: 0 !important;
+//     cursor: pointer;
+// }
+
+

@@ -1,0 +1,20 @@
+/* Theme block references */
+
+.rm-block-ref {
+  transition: background 0.05s ease;
+}
+
+/* ref button */	
+.rm-block__ref-count, .block-ref-count-button{
+  opacity: 1 !important;
+  color: rgba(var(--athena-blue), 1) !important;
+  background: var(--link-color---opacity-lower) !important;
+  font-weight: 500 !important;
+  border-radius: 0.25rem;
+}
+.rm-block__ref-count:hover, .block-ref-count-button:hover{
+  background: var(--link-color---opacity-low) !important;
+}
+
+
+

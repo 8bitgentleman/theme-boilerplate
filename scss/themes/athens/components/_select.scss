@@ -1,0 +1,11 @@
+/* Select Menu */
+
+.rm-option {
+    border: 1px solid var(--accent__color-font);
+    color: var(--accent__color-font);
+    padding: 0px 8px 0px 4px;
+
+    &:after {
+        display: none;
+    }
+}

@@ -1,0 +1,17 @@
+/* multibar */
+
+.rm-multibar{
+    left:-13px;
+}
+.rm-multibar:hover{
+    border-right: 3px solid #5C7080;
+    width: calc(1px + calc(1px - -6px));
+    
+}
+/*outer multibar*/
+.rm-level-0>.rm-multibar {
+    border-right: 1px dashed var(--athena-blue-10);
+}
+.rm-level-0>.rm-multibar:hover {
+    border-right: 3px solid var(--athena-blue-25);
+}

@@ -1,0 +1,23 @@
+/* Typography */
+// page titles
+.rm-title-display:not(#roam-title-day-banner) {
+  font-size: 3.125em;
+  font-weight: 600;
+  letter-spacing: -0.03em;
+  color: rgba(var(--headers),1);
+  line-height: 1.40em;
+  margin: 0.10em 0 0.10em 0;
+}
+.rm-heading-level-2 > .rm-block__self .rm-block__input {
+  letter-spacing: -0.03em;
+}
+
+.rm-heading-level-3 > .rm-block__self .rm-block__input {
+    letter-spacing: -0.02em;
+}
+
+.roam-body {
+  .roam-app {
+    // color: var(--main-font__color);
+  }
+}

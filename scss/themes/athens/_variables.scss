@@ -1,0 +1,335 @@
+:root {
+  /* ------------------------ */ 
+  /* Athens default variables */
+  /* ------------------------ */ 
+
+  /* Type */
+  --headers: 50, 47, 56; //#
+  --body-text: 67, 63, 56; //#433f38
+
+  /* Dividers, Borders, Sidebars */
+  --sidebar: #efedeb;
+  --sidebar-50: 239, 237, 235, 0.5;
+  --input-border: #C9C7C7;
+  --input-border-hover: #999692;
+
+  /* Primary Theme */
+  --athena-blue: 0, 117, 225; //#0075E1
+  --athena-blue-10: 230, 241, 252; //#e6f1fc
+  --athena-blue-25: #BFDDF8;
+  --athena-blue-50: 128, 186, 240; //#80BAF0
+  --athena-blue-80: 75, 153, 226; //#4A99E1
+  --athena-gold: 249, 161, 50; // #f9a132;
+  --athena-gold-highlight: #FEF6EB;
+
+  /* Alerts */
+  --error-background-fill: #FDE7E9;
+  --error-icon-text: #D20000;
+  --alert-background-fill: #FEF6EB;
+  --alert-icon-text: #F9A132;
+  --confirmation-fill: #FED9CC;
+  --confirmation-icon-text: #009E23;
+
+  /* Overlays */
+  --overlay-light: #FFF - 40%;
+  --overlay-dark: #000 - 40%;
+
+  /* Misc */
+  --link-color---opacity-lower: rgba(var(--athena-blue), 0.1);
+  --link-color---opacity-low: rgb(var(--athena-blue), .25);
+  --body-text-color---opacity-lower:	rgba(var(--body-text), .1);
+ 
+  // athena
+    --box-shadow-color: 16, 22, 26;
+    --input-shadow-color: 19, 124, 189;
+
+}
+
+/* ----- Bullet Path -----*/
+:root {
+  --bulletPath-LineColor: var(--athena-blue);
+  --bulletPath-BulletColor: var(--athena-blue);
+  --bulletPath-BulletScale: 2;
+  --bulletPath-RefColor: var(--athena-gold);
+  --page-color: white;
+}
+
+/* ----- Progress Bar -----*/
+:root {
+  --progress-bar-default: #0075FF;
+  --progress-bar: var(--athena-blue);
+  --progress-border: #B6B6B6;
+  --progress-bg: #EFEFEF;
+}
+
+:root {
+  /* ---------------------- */
+  /* Roam default variables */
+  /* ---------------------- */
+
+  --primary-color: #137cbd;
+  --s1: 8px;
+  --background-color: #e1e8ed;
+
+  /* Components */
+
+  --alias__background-color: rgb(235, 241, 245); /* Legacy alias */
+  --alias__color: rgb(245, 86, 86);
+
+  --attr__color: var(--main-font__color);
+  --attr__font-weight: bold;
+
+  --block-ref__background-color: none;
+  --block-ref__background-color_hover: rgba(var(--athena-gold), .1);
+  --block-ref__border-bottom: rgb(var(--athena-gold));
+  --block-ref__color_hover: inherit;
+  --block-ref__font-size: 0.9em;
+  --block-ref__background-color_inline: #f5f8fa;
+  --block-ref__border-left_inline: #8a9ba8;
+
+  --block-embed__background-color: rgba(--sidebar-50); /* --sidebar at 50% */
+  --block-embed__background-color_margin-action: #738694;
+  --block-embed__border-left_margin-action: #182026;
+
+  --blockquote__background-color: var(--sidebar); //f5f8fa
+  --blockquote__border_color: rgba(var(--athena-blue),1);
+  --blockquote__border-left: 5px solid;
+  --blockquote__color: inherit;
+  --blockquote__font-size: 14px;
+  --blockquote__text-align: inherit;
+  --blockquote__text-justify: inherit;
+
+  --code-font__color: #6d9cbe;
+  --code-font__font-family: monospace;
+  --code-font__font-size: 1em;
+  --code__background: #eee;
+  --code__background_gutter: #f7f7f7;
+  --code-inline__border: 1px solid #ddd;
+
+  --db-menu__background-color: inherit;
+  --db-menu__background-color_hover: #5c7080;
+  --db-menu__box-shadow: #bfccd6;
+  --db-menu-title__color: #ced9e0;
+
+  --datepicker__background-color: #fff;
+  --datepicker__color: inherit;
+  --datepicker__color_other-month: rgba(92, 112, 128, 0.6);
+  --datepicker-day__background_hover: #d8e1e8;
+  --datepicker-day__color_hover: #182026;
+  --datepicker-today__border: rgba(16, 22, 26, 0.15);
+
+  --dialog__background: #ebf1f5;
+  --dialog__color: rgba(var(--body-text),1);
+  --dialog-input__background: #f5f8fa;
+
+  --emoji__background-color: rgba(226, 236, 243, 0.6);
+  --emoji__border: rgb(19, 124, 189);
+  --emoji__color: rgb(14, 90, 138);
+
+  --encrypted__background-color: #f5f8fa;
+  --encrypted__color: #8a9ba8;
+  --encrypted__font-size: 12px;
+
+  --external-link__color: #337ab7;
+  --external-link__text-decoration: underline;
+
+  --inline-block__background-color: #f5f8fa;
+  --inline-block__border: #ebf1f5;
+  --inline-search__background-color: white;
+
+  --kanban-board__background-color: #a7b6c2;
+  --kanban-card__background-color: white;
+  --kanban-card__color: #6d9cbe;
+  --kanban-column__background-color: #ededed;
+  --kanban-column__color: #5c7080;
+
+  --linked-reference__backgound-color_1: #ebf1f5;
+  --linked-reference__backgound-color_2: #f5f8fa;
+  --linked-reference__backgound-color_3: #ced9e0;
+
+  --menu__color: inherit;
+  --menu__background: #fff;
+
+  --page-brackets__color: rgba(var(--body-text), .5);
+  --page-link__color: rgb(var(--athena-blue));
+  --page-link-namespace__color: rgba(var(--athena-gold),.8);
+
+  --pomodoro__background: transparent;
+  --pomodoro__color: #182026;
+  --pomodoro__border-color: #ced9e0;
+
+  --query__border: 0.5px solid #bfccd6;
+  --query__color_query-string: #5c7080;
+
+  --rm-g__background-color_block: #f5f8fa;
+  --rm-g__background-color_left-border: #394b59;
+
+  --select-menu__background-color: inherit;
+
+  --table__border: 1px solid grey;
+  --table__font-size: 12px;
+
+  --tag__background-color_hover: inherit;
+  --tag__border-radius: inherit;
+  --tag__color: rgba(var(--body-text), .5);
+  --tag__color_hover: inherit;
+  --tag__color_hashtag: var(--tag__color);
+  --tag__padding: inherit;
+
+  --todo-checkmark__background-color: #fff;
+  --todo-checkmark__color: rgb(var(--athena-blue)) !important;
+
+  --version-bullet__background-color: rgb(var(--athena-blue));
+  --version-bullet__border: rgb(var(--athena-blue));
+
+  /* layout */
+
+  /* body */
+
+  --body__background-color: #fff;
+  --main-font__color: #202b33;
+  --main-font__font-family: 'IBM Plex Sans', sans-serif;
+  --main-font__font-size: 14px;
+  --caret__color: #0080ff;
+  --accent__color: #e98924;
+  --accent__color_alert: #ff6000;
+  --accent__color-font: #1189bd;
+
+  --block-highlight__background-color_selected: var(--link-color---opacity-lower);
+  --block-highlight__background-color_active: transparent;
+  --block-highlight__background-color_mentions: yellow;
+
+  --bullet__background-color: #394b59;
+  --bullet__border_closed: #ced9e0;
+  --bullet-outline__border: #bfccd6;
+  --bullet-outline__border_hover: #5c7080;
+
+  --section-divider_border-top: #738694;
+
+  /* breadcrumb */
+
+  --breadcrumb__background-color: white;
+  --breadcrumb__font-size: 14px;
+
+  /* help */
+
+  --help__background-color: inherit;
+  --help__border: #e8eaeb;
+  --help__color: inherit;
+
+  /* left sidebar */
+
+  --left-sidebar__background-color: white;
+  --left-sidebar__background-color_hover: rgba(var(--athena-blue-10),1);
+  --left-sidebar__color: rgba(var(--headers),1);
+  --left-sidebar__color_hover: rgb(var(--body-text));
+  --left-sidebar__font-size: 14px;
+  --left-sidebar-shortcuts__color: rgb(var(--athena-blue));
+  --left-sidebar-shortcuts__color_hover: rgb(var(--body-text));
+  --left-sidebar-shortcuts__color_title: var(--left-sidebar__color);
+  --left-sidebar-shortcuts__font-size: 14px;
+
+  /* right sidebar */
+
+  --right-sidebar__color_title-closed: inherit;
+  --right-sidebar__background-color: rgba(92, 112, 128, 0.05);
+  --right-sidebar-masonry__background-color: inherit;
+  --right-sidebar-masonry__border: inherit;
+  --right-sidebar__border: rgb(138, 155, 168);
+
+  /* scrollbar */
+
+  --scrollbar-track: #ffffff10;
+  --scrollbar-thumb: rgba(153, 153, 153, 0.1);
+
+  /* topbar */
+
+  --status-icon__background-color_saving-local: #99280f;
+  --status-icon__background-color_saving-remote: #d9822b;
+  --status-icon__background-color_synched: #0f9960;
+  --search__background: inherit;
+  --search__background-color_selected-row: rgba(var(--athena-blue), 0.2) !important;
+  --search__color_body: #8a9ba8;
+  --search__color_new-page: #0d8050;
+  --search__color_page: #bfccd6;
+  --search__border: border: 5px solid red !important; // JH: TODO update the style to reflect a full rule rather than just a single color
+  --topbar__background-color: white;
+  --topbar__border: #eee;
+
+  /* typography */
+
+  --calculation__color: #0a6640;
+  --emphasis__color: inherit;
+  --h1__color: #202b33;
+  --h1__color_link: var(--page-link__color);
+  --h1__font-family: var(--main-font__font-family);
+  --h1__font-size: 1.8rem;
+  --h1__font-weight: 400;
+  --h2__color: #202b33;
+  --h2__color_link: var(--page-link__color);
+  --h2__font-family: var(--h1__font-family);
+  --h2__font-size: 1.4rem;
+  --h2__font-weight: 400;
+  --h3__color: #5c7080;
+  --h3__color_link: var(--page-link__color);
+  --h3__font-family: var(--h1__font-family);
+  --h3__font-size: 1.2rem;
+  --h2__font-weight: 500;
+  --highlight__background-color: rgba(var(--athena-gold), .4);
+  --highlight__color: inherit;
+  --highlight-link-color: inherit;
+  --hr__border: #8a9ba8;
+  --hr__margin-bottom: inherit;
+  --hr__margin-top: 10px;
+  --strikethrough__color: inherit;
+  --strikethrough__font-style: normal;
+  --strikethrough__opacity: 1;
+  --strong__color: inherit;
+  --strong__font-weight: bold;
+
+  /* pages */
+
+  /* all pages */
+  --pages-checkmark__background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(rgba(255, 255, 255, 0.8)),
+    to(rgba(255, 255, 255, 0))
+  );
+  --pages-delete__background-color: #f5f8fa;
+  --pages-delete__border-color: #d8e1e8;
+  --pages-header__background-color: #e1e8ed;
+  --pages-header__color: #bfccd6;
+  --pages-mentions__background-color_empty: white;
+  --pages-mentions__background-color: #2b95d6;
+  --pages-mentions__color_empty: #0e5a8a;
+  --pages-search-field__background-color: #f5f8fa;
+  --pages-search-field__border-color: #8a9ba8;
+  --pages-table__border-color: #e1e8ed;
+  --pages-header__color_sorted: #5c7080;
+
+  /* icons */
+
+  --icon__background-color_hover: rgba(167, 182, 194, 0.3);
+  --icon__color: #5c7080;
+  --icon__color_hover: #182026;
+  --filter__color_subscript: #182026;
+}
+
+/* ----- Bullet Path -----*/
+:root {
+  --bulletPath-LineColor: rgb(var(--athena-blue));
+  --bulletPath-BulletColor: rgb(var(--athena-blue));
+  --bulletPath-BulletScale: 2;
+  --bulletPath-RefColor: rgb(var(--athena-gold));
+  --page-color: white;
+}
+
+/* ----- Progress Bar -----*/
+:root {
+  --progress-bar-default: #0075FF;
+  --progress-bar: rgb(var(--athena-blue));
+  --progress-border: #B6B6B6;
+  --progress-bg: #EFEFEF;
+}

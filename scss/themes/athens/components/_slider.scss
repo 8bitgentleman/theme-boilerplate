@@ -1,0 +1,46 @@
+/*--------*/
+/* slider */
+/*--------*/
+
+.bp3-slider-handle {
+    background-color: rgba(var(--athena-blue),1);
+    background-image: none;
+    border-radius: 2px;
+    box-shadow: 0 0 0 1px white, 0 1px 1px white;
+    height: 15px;
+    width: 14px;
+
+    .bp3-slider-label{
+		background: transparent !important;
+		margin-top: -20px !important;
+		box-shadow: none;
+		margin-left: 7px !important;
+    }
+
+}
+
+.bp3-slider-axis {
+    .bp3-slider-label {
+        display: none;
+}}
+.slider-cell {
+    margin-top: -16px;
+}
+
+.bp3-slider-track {
+    margin-top: 2px;
+    margin-bottom: 8px;
+    .bp3-slider-progress {
+        height: 2px;
+    }
+
+}
+
+.bp3-slider-handle{
+    &:hover{
+        background-color: rgba(var(--athena-blue-50), 1);
+    }
+    &:active {
+        background-color: rgba(var(--athena-blue-50), 1);
+    }
+}
