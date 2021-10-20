@@ -1,8 +1,11 @@
 /* Right sidebar */
 
 #right-sidebar {
+  transition-duration: 0.35s;
+  transition-property: width, border, background;
   background-color: var(--right-sidebar__background-color);
-
+  border-left: 1px solid var(--sidebar);
+  
   .rm-title-textarea {
     width: 95%; //TODO this is a fix to keep the Page title from moving when editing it
   }
@@ -14,7 +17,22 @@
       content: url("data:image/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMSIgZGF0YS1uYW1lPSJMYXllciAxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgdmlld0JveD0iMCAwIDE2IDE2Ij48cGF0aCBkPSJNMTEuNDEsMi42aDEuNjh2MTBIMTEuNDFaTTIuNzQsMy43NywzLjkxLDIuNmw1LDUtNSw1TDIuNzQsMTEuNDMsNi41Nyw3LjZaIiBzdHlsZT0iZmlsbDojMzIyZjM4Ii8+PC9zdmc+") !important;
     }
   }
-
+  .rm-resize-handle {
+    width: 2px;
+    min-width: 1px !important;
+    top: 0;
+    height: 100%;
+    position: absolute;
+    z-index: 10 !important;
+    cursor: col-resize;
+    background-color: rgba(var(--athena-blue-50), 1);
+    opacity: 0;
+    transition: opacity 0.2s ease;
+    
+    &:hover {
+      opacity: 1;
+    }
+  }
 
 }
 
