@@ -87,7 +87,7 @@
   --block-ref__background-color_inline: #f5f8fa;
   --block-ref__border-left_inline: #8a9ba8;
 
-  --block-embed__background-color: rgba(--sidebar-50); /* --sidebar at 50% */
+  --block-embed__background-color: rgba(var(--sidebar-50)); /* --sidebar at 50% */
   --block-embed__background-color_margin-action: #738694;
   --block-embed__border-left_margin-action: #182026;
 
@@ -252,7 +252,7 @@
   --search__color_body: #8a9ba8;
   --search__color_new-page: #0d8050;
   --search__color_page: #bfccd6;
-  --search__border:  5px solid red !important; // JH: TODO update the style to reflect a full rule rather than just a single color
+  --search__border: none; // JH: TODO update the style to reflect a full rule rather than just a single color
   --topbar__background-color: white;
   --topbar__border: #eee;
 

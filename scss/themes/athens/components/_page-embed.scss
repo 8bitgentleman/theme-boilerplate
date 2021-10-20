@@ -1,12 +1,12 @@
 /* Page Embed */
 
 .rm-embed--page {
-  background-color: var(--block-embed__background-color);
+  background-color: var(--block-embed__background-color) !important;
   // border-radius: 6px;
   .rm-page__title {
     font-weight: 600;
     letter-spacing: -0.03em;
-    color: rgb(var(--body-text-));
+    color: rgba(var(--body-text), 1);
   }
   > .rm-embed-margin-action {
     background-color: rgba(var(--athena-blue-80), .5);
@@ -17,7 +17,7 @@
 /* Linked References Page Embed */
 .rm-embed-container {
   background-color: var(--block-embed__background-color) !important;
-  border:1px double var(--athena-blue-50);
+  border:1px double rgba(var(--athena-blue-50), 1);
   border-radius: 5px;
   .rm-embed-container{
     background-color: var(--sidebar);
