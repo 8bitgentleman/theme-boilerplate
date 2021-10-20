@@ -9,10 +9,10 @@
 // @import 'features/editor/bullet-zoom-focus/main';
 // @import 'features/editor/wide-layout/main';
 // @import 'features/left-sidebar/mosaic/main';
-@import 'features/right-sidebar/masonry/index'; // @import 'features/right-sidebar/stacked/main';
-@import 'features/left-sidebar/mosaic/index.scss';
+// @import 'features/right-sidebar/masonry/index'; // @import 'features/right-sidebar/stacked/main';
+// @import 'features/left-sidebar/mosaic/index.scss';
 
-@import 'features/top-bar/mosaic/index.scss';
+// @import 'features/top-bar/mosaic/index.scss';
 
 
 // @import 'features/right-sidebar/stacked/main';
@@ -32,7 +32,9 @@
 // }
 
 /* Main Theme Include */
+// @import 'themes/template/main';
 @import 'themes/athens/main';   
+
     // @import 'themes/~PANIC~/main';
     // @import 'themes/cheatsheets/main';
 

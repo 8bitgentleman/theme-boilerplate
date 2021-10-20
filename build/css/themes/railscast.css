@@ -23,11 +23,6 @@
   --block-ref__font-size: 1em;
   --block-ref__background-color_inline: rgba(33, 33, 33, 0.5);
   --block-ref__border-left_inline: var(--blockquote__border_color);
-  --block-callout__background-color_grey: #333;
-  --block-callout__background-color_blue: rgba(0, 170, 255, 0.1);
-  --block-callout__background-color_red: rgba(249, 87, 56, 0.25);
-  --block-callout__background-color_orange: rgba(238, 150, 75, 0.25);
-  --block-callout__background-color_yellow: rgba(244, 211, 94, 0.2);
   --block-embed__background-color: #d8ac6e0e;
   --block-embed__background-color_margin-action: var(--blockquote__border_color);
   --block-embed__border-left_margin-action: var(--bullet-outline__border_hover);
@@ -81,11 +76,6 @@
   --mermaid-path__stroke: #555;
   --mermaid-element__fill: #594032;
   --mermaid-element__stroke: var(--accent__color);
-  /* Seasonal colors for date links */
-  --page-link-date__color_q1: #50b2c0;
-  --page-link-date__color_q2: #c5d86d;
-  --page-link-date__color_q3: #ff6b6b;
-  --page-link-date__color_q4: #ca7d4a;
   --page-brackets__color: rgba(228, 124, 67, 0.25);
   --page-link__color: #eb9854;
   --page-link-namespace__color: #f57030;
@@ -422,54 +412,6 @@ span[style*='background-color: rgb(235, 241, 245); border-radius: 4px;'] {
 .rm-attr-ref {
   color: var(--attr__color);
   font-weight: var(--attr__font-weight);
-}
-
-/*  Block Callouts
-    Use special tags to create colored callout blocks
-    #.rm-block--grey will callout the entire block, including children
-    #.rm-self--grey will only callout the block the tag is added to
-    #.rm-child--grey will callout the children of the block the tag is added to
-
-    Available colors
-    --grey
-    --blue
-    --red
-    --orange
-    --yellow
-*/
-.rm-block--grey,
-.rm-self--grey > div.rm-block-main,
-.rm-child--grey .rm-block-children {
-  background-color: var(--block-callout__background-color_grey);
-  border-radius: 0px 5px 5px 0px !important;
-}
-
-.rm-block--blue,
-.rm-self--blue > div.rm-block-main,
-.rm-child--blue .rm-block-children {
-  background-color: var(--block-callout__background-color_blue);
-  border-radius: 0px 5px 5px 0px !important;
-}
-
-.rm-block--red,
-.rm-self--red > div.rm-block-main,
-.rm-child--red .rm-block-children {
-  background-color: var(--block-callout__background-color_red);
-  border-radius: 0px 5px 5px 0px !important;
-}
-
-.rm-block--orange,
-.rm-self--orange > div.rm-block-main,
-.rm-child--orange .rm-block-children {
-  background-color: var(--block-callout__background-color_orange);
-  border-radius: 0px 5px 5px 0px !important;
-}
-
-.rm-block--yellow,
-.rm-self--yellow > div.rm-block-main,
-.rm-child--yellow .rm-block-children {
-  background-color: var(--block-callout__background-color_yellow);
-  border-radius: 0px 5px 5px 0px !important;
 }
 
 /* Block Reference */
@@ -1106,31 +1048,6 @@ button[style*='border: 0.5px solid rgb(206, 217, 224);'] {
 
 .rm-heading-level-3 .rm-page-ref--link {
   color: var(--h3__color_link);
-}
-
-/* Page date link - organized by quarter */
-span[data-link-title^='January '] .rm-page-ref--link,
-span[data-link-title^='February '] .rm-page-ref--link,
-span[data-link-title^='March '] .rm-page-ref--link {
-  color: var(--page-link-date__color_q1);
-}
-
-span[data-link-title^='April '] .rm-page-ref--link,
-span[data-link-title^='May '] .rm-page-ref--link,
-span[data-link-title^='June '] .rm-page-ref--link {
-  color: var(--page-link-date__color_q2);
-}
-
-span[data-link-title^='July '] .rm-page-ref--link,
-span[data-link-title^='August '] .rm-page-ref--link,
-span[data-link-title^='September '] .rm-page-ref--link {
-  color: var(--page-link-date__color_q3);
-}
-
-span[data-link-title^='October '] .rm-page-ref--link,
-span[data-link-title^='November '] .rm-page-ref--link,
-span[data-link-title^='December '] .rm-page-ref--link {
-  color: var(--page-link-date__color_q4);
 }
 
 /* Pomodoro timer */
@@ -2032,6 +1949,62 @@ span[data-tag*='meeting']:before {
   word-break: break-word;
 }
 
+/*  Block Callouts
+    Use special tags to create colored callout blocks
+    #.rm-block--grey will callout the entire block, including children
+    #.rm-self--grey will only callout the block the tag is added to
+    #.rm-child--grey will callout the children of the block the tag is added to
+
+    Available colors
+    --grey
+    --blue
+    --red
+    --orange
+    --yellow
+*/
+:root {
+  --block-callout__background-color_grey: #333;
+  --block-callout__background-color_blue: rgba(0, 170, 255, 0.1);
+  --block-callout__background-color_red: rgba(249, 87, 56, 0.25);
+  --block-callout__background-color_orange: rgba(238, 150, 75, 0.25);
+  --block-callout__background-color_yellow: rgba(244, 211, 94, 0.2);
+}
+
+.rm-block--grey,
+.rm-self--grey > div.rm-block-main,
+.rm-child--grey .rm-block-children {
+  background-color: var(--block-callout__background-color_grey);
+  border-radius: 0px 5px 5px 0px !important;
+}
+
+.rm-block--blue,
+.rm-self--blue > div.rm-block-main,
+.rm-child--blue .rm-block-children {
+  background-color: var(--block-callout__background-color_blue);
+  border-radius: 0px 5px 5px 0px !important;
+}
+
+.rm-block--red,
+.rm-self--red > div.rm-block-main,
+.rm-child--red .rm-block-children {
+  background-color: var(--block-callout__background-color_red);
+  border-radius: 0px 5px 5px 0px !important;
+}
+
+.rm-block--orange,
+.rm-self--orange > div.rm-block-main,
+.rm-child--orange .rm-block-children {
+  background-color: var(--block-callout__background-color_orange);
+  border-radius: 0px 5px 5px 0px !important;
+}
+
+.rm-block--yellow,
+.rm-self--yellow > div.rm-block-main,
+.rm-child--yellow .rm-block-children {
+  background-color: var(--block-callout__background-color_yellow);
+  border-radius: 0px 5px 5px 0px !important;
+}
+
 /* Bullet Zoom Focus
 When zoomed in on a bullet add the tag #.rm-focus to the parent block
 to create a minimal writing environment. This only works when zoomed in
@@ -2064,6 +2037,39 @@ so there is no need to remove the tag when done.
 
 .zoom-path-view + div .rm-focus .rm-level-1 {
   margin-left: -4px;
+}
+
+/* Page date link - organized by quarter */
+:root {
+  /* Seasonal colors for date links */
+  --page-link-date__color_q1: #50b2c0;
+  --page-link-date__color_q2: #c5d86d;
+  --page-link-date__color_q3: #ff6b6b;
+  --page-link-date__color_q4: #ca7d4a;
+}
+
+span[data-link-title^='January '] .rm-page-ref--link,
+span[data-link-title^='February '] .rm-page-ref--link,
+span[data-link-title^='March '] .rm-page-ref--link {
+  color: var(--page-link-date__color_q1);
+}
+
+span[data-link-title^='April '] .rm-page-ref--link,
+span[data-link-title^='May '] .rm-page-ref--link,
+span[data-link-title^='June '] .rm-page-ref--link {
+  color: var(--page-link-date__color_q2);
+}
+
+span[data-link-title^='July '] .rm-page-ref--link,
+span[data-link-title^='August '] .rm-page-ref--link,
+span[data-link-title^='September '] .rm-page-ref--link {
+  color: var(--page-link-date__color_q3);
+}
+
+span[data-link-title^='October '] .rm-page-ref--link,
+span[data-link-title^='November '] .rm-page-ref--link,
+span[data-link-title^='December '] .rm-page-ref--link {
+  color: var(--page-link-date__color_q4);
 }
 
 /* RR change: MINIMIZE QUERIES: add any one of the following tags before the beginning of your query (in the same block):

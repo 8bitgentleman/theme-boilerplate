@@ -19,13 +19,16 @@
 @import 'components/slider';
 @import 'components/menu';
 @import 'components/block-embed';
+@import 'components/page-embed';
+
 /* layout */
-    @import 'layout/multibar';
-    @import 'layout/left-sidebar';
-    // @import 'layout/right-sidebar';
-    // @import 'layout/athena';
-    @import 'layout/body';
-    @import 'layout/typography';
+@import 'layout/multibar';
+@import 'layout/top-bar';
+// @import 'layout/left-sidebar';
+// @import 'layout/right-sidebar';
+// @import 'layout/athena';
+@import 'layout/body';
+@import 'layout/typography';
 
     /* pages */
 // @import 'pages/all-pages';
